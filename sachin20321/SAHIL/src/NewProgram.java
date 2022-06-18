@@ -7,6 +7,5 @@ public class NewProgram {
 	 System.out.println("The sum is "+sum);
 	 System.out.println("The product is "+pro);
 	 System.out.println("Hello Wolrd");
-	 System.out.println("Heyy There");
  }
 }
