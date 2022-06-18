@@ -1,0 +1,176 @@
+
+
+<!doctype html>
+<html>
+<head>
+  <marquee bgcolor="#af6c14"><p id="date"> </p> </marquee>
+  <script>
+  n = new Date();
+  y = n.getFullYear();
+  m = n.getMonth() + 1;
+  d = n.getDate();
+document.getElementById("date").innerHTML = "Todays Date: " + d + "-" + m + "-" + y;
+
+  function display()
+{
+document.getElementById("displayarea").innerHTML = document.getElementById("f1").value; 
+document.getElementById("f1").value = "";
+document.getElementById("displayarea1").innerHTML = document.getElementById("f2").value; 
+document.getElementById("f2").value = "";
+document.getElementById("displayarea2").innerHTML = document.getElementById("f3").value; 
+document.getElementById("f3").value = "";
+document.getElementById("displayarea3").innerHTML = document.getElementById("f4").value; 
+document.getElementById("f4").value = "";
+document.getElementById("displayarea4").innerHTML = document.getElementById("f5").value; 
+document.getElementById("f5").value = "";
+document.getElementById("displayarea5").innerHTML = document.getElementById("f6").value; 
+document.getElementById("f6").value = "";
+document.getElementById("displayarea6").innerHTML = document.getElementById("f7").value; 
+document.getElementById("f7").value = "";
+document.getElementById("displayarea7").innerHTML = document.getElementById("f8").value; 
+document.getElementById("f8").value = "";
+}
+</script>
+
+<style>
+.button {
+  background-color: #af6c14;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body style="background-color:rgb(241, 213, 169);"> 
+
+
+<center><u><b><font size="6" face="Courier New">ADDMISSION FORM</font></b></u></center>
+<h2 style="text-align:center;"><b>Grade Details</b></h2>
+
+<form>
+<table align="center" >
+ <tr>
+  <td> <font size="4" face="Courier New" > Name: </font> </td>
+  <td> <input type="text" placeholder="Enter Grade Name" name="f1" id="f1" > </td>
+  <td> &nbsp; </td>
+  <td> &nbsp; </td>
+  <td> &nbsp; </td>
+  <td> &nbsp; </td>
+  <td> &nbsp; </td>
+ <td><font size="4" face="Courier New" > Adress: </font> </td>
+ <td> <input type="text" placeholder="Enter Grade Short Name" name="f5" id="f5"> </td> 
+ </tr>
+ 
+  <tr>
+  <td><font size="4" face="Courier New" >Email:</font> </td>
+  <td> <input type="text" placeholder="Enter Travel Allowance" name="f2" id="f2"> </td>
+  <td> &nbsp; </td>
+  <td> &nbsp; </td>
+  <td> &nbsp; </td>
+  <td> &nbsp; </td>
+  <td> &nbsp; </td>
+ <td><font size="4" face="Courier New" > Contact No.:</font> </td>
+ <td> <input type="text" placeholder="Enter HRA" name="f6" id="f6"> </td> 
+ </tr>
+ 
+  <tr>
+  <td><font size="4" face="Courier New" >Gender:</font> </td>
+  <td> <input type="text" placeholder="Enter Medical Allowance" name="f3" id="f3"> </td>
+  <td> &nbsp; </td>
+  <td> &nbsp; </td>
+  <td> &nbsp; </td>
+  <td> &nbsp; </td>
+  <td> &nbsp; </td>
+ <td><font size="4" face="Courier New" >Bonus: </font> </td>
+ <td> <input type="text" placeholder="Enter Bonus" name="f7" id="f7"> </td> 
+ </tr>
+ 
+  <tr>
+  <td><font size="4" face="Courier New" > Provided Funds: </font></td>
+  <td> <input type="text" placeholder="Enter Provided Funds" name="f4" id="f4"> </td>
+  <td> &nbsp; </td>
+  <td> &nbsp; </td>
+  <td> &nbsp; </td>
+  <td> &nbsp; </td>
+  <td> &nbsp; </td>
+ <td> <font size="4" face="Courier New" >Professional Tax: </font> </td>
+ <td> <input type="text" placeholder="Enter Professional Tax" name="f8" id="f8"> </td> 
+ </tr>
+ </table>
+ 
+ <h2 style="text-align:center;"> 
+ <input type="button" class="button" value="Add Grade" name="Add Grade" id="Add Grade" onClick="display()"/>
+ <input type="reset" class="button" value="reset">
+ 
+ </h2>
+ </form>
+
+<br>
+<br>
+
+
+<center><b><font size="4" face="Courier New">Results:</font></b></center>
+  <table width="400px" align="center" border=0> 
+    <tr>
+      <td> Grade Name: </td>
+      <td> <div id="displayarea"></div> </td>
+      <td> &nbsp; </td>
+      <td> &nbsp; </td>
+      <td> &nbsp; </td>
+      <td> &nbsp; </td>
+      <td> &nbsp; </td>
+      <td> Grade Short Name: </td>
+      <td> <div id="displayarea4"></div></td> 
+     </tr>
+
+     <tr>
+      <td> Travel Allowance: </td>
+      <td> <div id="displayarea1"></div></td>
+      <td> &nbsp; </td>
+      <td> &nbsp; </td>
+      <td> &nbsp; </td>
+      <td> &nbsp; </td>
+      <td> &nbsp; </td>
+      <td> HRA: </td>
+      <td> <div id="displayarea5"></div></td> 
+     </tr>
+     
+     <tr>
+      <td> Medical Allowance: </td>
+      <td> <div id="displayarea2"></div></td>
+      <td> &nbsp; </td>
+      <td> &nbsp; </td>
+      <td> &nbsp; </td>
+      <td> &nbsp; </td>
+      <td> &nbsp; </td>
+      <td> Bonus: </td>
+      <td> <div id="displayarea6"></div></td> 
+     </tr>
+
+     <tr>
+      <td> Provided Funds: </td>
+      <td> <div id="displayarea3"></div></td>
+      <td> &nbsp; </td>
+      <td> &nbsp; </td>
+      <td> &nbsp; </td>
+      <td> &nbsp; </td>
+      <td> &nbsp; </td>
+     <td> Professional Tax: </td>
+     <td><div id="displayarea7"></td> 
+     </tr>
+  </table>
+<br>
+<br>
+<br>
+<br>
+
+
+</body>
+ </html 

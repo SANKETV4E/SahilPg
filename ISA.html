@@ -1,0 +1,79 @@
+<html>
+<head>
+<script>
+  function validation()
+  {
+   var name=document.myform.fname.value;
+   var namem=document.myform.mname.value;
+   var namel=document.myform.lname.value;
+   var z=document.myform.number.value;
+   var passc=document.myform.cpass.value;
+   var passr=document.myform.rpass.value;
+
+  if( name == null || name == "" )
+   {
+    alert("Name Cant be blank!");
+    return false;
+   } else 
+  if( namem == null || namem == "" )
+   {
+    alert("Middle Name Cant be blank!");
+    return false;
+   }
+  if( namel == null || namel == "" )
+   {
+    alert("Last Name Cant be blank!");
+    return false;
+   }
+
+   if (z.length != 10)
+   {
+    alert("Invalid Number");
+    return false;
+   }
+
+   if (passr.length != passc.length)
+   {
+    alert("Password doesnt match");
+    return false;
+   }
+}
+</script>
+
+<style>
+    form{
+    padding: 10px;
+    background-color: aqua;
+    }
+    p{
+    box-sizing: border-box;
+    }
+</style>
+</head>
+<body>
+    <center>
+   <form name="myform" method="post" onsubmit="return validation()"> 
+   Name:<input type="text" name="fname"><br><br><br>
+   Middle Name:<input type="text" name="mname"><br><br><br>
+   Last Name:<input type="text" name="lname"><br> <br>  <br>
+   <label> Course </label>
+   <select>
+       <option>BCA</option>
+       <option>BCOM</option>
+       <option>BBA</option>
+   </select>
+   <br>
+   <br> <br>  <br>
+   Phone:<input type="text" name="number"><br>   <br>
+   Address:<input type="text" name="add"><br>  <br> 
+   <p>Email:<input type="email" name="em"></p><br>  <br>
+    
+   password:<input type="password" name="cpass"><br> <br>
+   re-type password:<input type="password" name="rpass"><br> <br>
+
+   <input type="submit" name="sub"><br>  
+
+   </form>
+</center>
+</body>
+<html>
