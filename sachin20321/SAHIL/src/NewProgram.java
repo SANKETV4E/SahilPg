@@ -1,8 +1,10 @@
 public class NewProgram {
  public static void main(String args[]) {
 	 int a=5, b=6, sum;
-	 System.out.println("The sum is");
+	 int c=10, d=5, pro;
 	 sum=a+b;
-	 System.out.println(sum);
+	 pro=c*d;
+	 System.out.println("The sum is "+sum);
+	 System.out.println("The product is "+pro);
  }
 }
