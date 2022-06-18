@@ -6,5 +6,6 @@ public class NewProgram {
 	 pro=c*d;
 	 System.out.println("The sum is "+sum);
 	 System.out.println("The product is "+pro);
+	 System.out.println("Hello Wolrd");
  }
 }
